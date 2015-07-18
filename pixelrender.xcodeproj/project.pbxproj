@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		654BCD691AABB30B003693F5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD681AABB30B003693F5 /* main.cpp */; };
+		654BCD711AABB33A003693F5 /* FrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD6F1AABB33A003693F5 /* FrameBuffer.cpp */; };
+		654BCD741AABB3EE003693F5 /* Pixel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD721AABB3EE003693F5 /* Pixel.cpp */; };
+		654BCD771AABBB31003693F5 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD751AABBB31003693F5 /* Renderer.cpp */; };
+		654BCD7A1AABCB9E003693F5 /* LightStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD781AABCB9E003693F5 /* LightStrip.cpp */; };
+		654BCD7D1AABCC12003693F5 /* Vector3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD7B1AABCC12003693F5 /* Vector3d.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		654BCD631AABB30A003693F5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		654BCD651AABB30A003693F5 /* pixelrender */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pixelrender; sourceTree = BUILT_PRODUCTS_DIR; };
+		654BCD681AABB30B003693F5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		654BCD6F1AABB33A003693F5 /* FrameBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameBuffer.cpp; sourceTree = "<group>"; };
+		654BCD701AABB33A003693F5 /* FrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameBuffer.h; sourceTree = "<group>"; };
+		654BCD721AABB3EE003693F5 /* Pixel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pixel.cpp; sourceTree = "<group>"; };
+		654BCD731AABB3EE003693F5 /* Pixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pixel.h; sourceTree = "<group>"; };
+		654BCD751AABBB31003693F5 /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		654BCD761AABBB31003693F5 /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		654BCD781AABCB9E003693F5 /* LightStrip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LightStrip.cpp; sourceTree = "<group>"; };
+		654BCD791AABCB9E003693F5 /* LightStrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightStrip.h; sourceTree = "<group>"; };
+		654BCD7B1AABCC12003693F5 /* Vector3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3d.cpp; sourceTree = "<group>"; };
+		654BCD7C1AABCC12003693F5 /* Vector3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3d.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		654BCD621AABB30A003693F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		654BCD5C1AABB30A003693F5 = {
+			isa = PBXGroup;
+			children = (
+				654BCD671AABB30A003693F5 /* pixelrender */,
+				654BCD661AABB30A003693F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		654BCD661AABB30A003693F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				654BCD651AABB30A003693F5 /* pixelrender */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		654BCD671AABB30A003693F5 /* pixelrender */ = {
+			isa = PBXGroup;
+			children = (
+				654BCD841AABEFE7003693F5 /* Libraries */,
+				654BCD681AABB30B003693F5 /* main.cpp */,
+				654BCD6F1AABB33A003693F5 /* FrameBuffer.cpp */,
+				654BCD701AABB33A003693F5 /* FrameBuffer.h */,
+				654BCD721AABB3EE003693F5 /* Pixel.cpp */,
+				654BCD731AABB3EE003693F5 /* Pixel.h */,
+				654BCD751AABBB31003693F5 /* Renderer.cpp */,
+				654BCD761AABBB31003693F5 /* Renderer.h */,
+				654BCD781AABCB9E003693F5 /* LightStrip.cpp */,
+				654BCD791AABCB9E003693F5 /* LightStrip.h */,
+				654BCD7B1AABCC12003693F5 /* Vector3d.cpp */,
+				654BCD7C1AABCC12003693F5 /* Vector3d.h */,
+			);
+			path = pixelrender;
+			sourceTree = "<group>";
+		};
+		654BCD841AABEFE7003693F5 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		654BCD641AABB30A003693F5 /* pixelrender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 654BCD6C1AABB30B003693F5 /* Build configuration list for PBXNativeTarget "pixelrender" */;
+			buildPhases = (
+				654BCD611AABB30A003693F5 /* Sources */,
+				654BCD621AABB30A003693F5 /* Frameworks */,
+				654BCD631AABB30A003693F5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pixelrender;
+			productName = pixelrender;
+			productReference = 654BCD651AABB30A003693F5 /* pixelrender */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		654BCD5D1AABB30A003693F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Derek Peterson";
+				TargetAttributes = {
+					654BCD641AABB30A003693F5 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 654BCD601AABB30A003693F5 /* Build configuration list for PBXProject "pixelrender" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 654BCD5C1AABB30A003693F5;
+			productRefGroup = 654BCD661AABB30A003693F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				654BCD641AABB30A003693F5 /* pixelrender */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		654BCD611AABB30A003693F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				654BCD7A1AABCB9E003693F5 /* LightStrip.cpp in Sources */,
+				654BCD771AABBB31003693F5 /* Renderer.cpp in Sources */,
+				654BCD741AABB3EE003693F5 /* Pixel.cpp in Sources */,
+				654BCD691AABB30B003693F5 /* main.cpp in Sources */,
+				654BCD711AABB33A003693F5 /* FrameBuffer.cpp in Sources */,
+				654BCD7D1AABCC12003693F5 /* Vector3d.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		654BCD6A1AABB30B003693F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		654BCD6B1AABB30B003693F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		654BCD6D1AABB30B003693F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		654BCD6E1AABB30B003693F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		654BCD601AABB30A003693F5 /* Build configuration list for PBXProject "pixelrender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				654BCD6A1AABB30B003693F5 /* Debug */,
+				654BCD6B1AABB30B003693F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		654BCD6C1AABB30B003693F5 /* Build configuration list for PBXNativeTarget "pixelrender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				654BCD6D1AABB30B003693F5 /* Debug */,
+				654BCD6E1AABB30B003693F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 654BCD5D1AABB30A003693F5 /* Project object */;
+}
