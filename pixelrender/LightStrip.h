@@ -14,9 +14,7 @@
 #include <string>
 #include "Pixel.h"
 #include "Vector3d.h"
-#include "asio.hpp"
-
-using asio::ip::tcp;
+#include "UDPClient.h"
 
 class LightStrip
 {
@@ -36,11 +34,10 @@ private:
     std::string m_ipAddress;
     std::string m_lastPacket;
     
-    asio::io_service m_ioService;
-    tcp::socket m_socket;
-    tcp::resolver m_resolver;
+    boost::asio::io_service m_ioservice;
+    UDPClient* m_client;
     
-    char SafeValue( char );
+    char SafeValue( float i_value );
 };
 
 #endif /* defined(__pixelrender__LightStrip__) */

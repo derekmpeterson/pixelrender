@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65179E681BCA344E00162CAF /* UDPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65179E661BCA344E00162CAF /* UDPClient.cpp */; };
+		6517A03B1BCAB83300162CAF /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6517A03A1BCAB83300162CAF /* libboost_system.a */; };
+		6517A03F1BCAC6D900162CAF /* FirelightFX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6517A03D1BCAC6D900162CAF /* FirelightFX.cpp */; };
+		6517A0421BCAC6F300162CAF /* FX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6517A0401BCAC6F300162CAF /* FX.cpp */; };
+		6517A0451BCACF4300162CAF /* AABB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6517A0431BCACF4300162CAF /* AABB.cpp */; };
+		6517A0481BCAD83400162CAF /* SwipeFX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6517A0461BCAD83400162CAF /* SwipeFX.cpp */; };
+		6517A04B1BCADA0400162CAF /* RandomNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6517A0491BCADA0400162CAF /* RandomNumbers.cpp */; };
 		654BCD691AABB30B003693F5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD681AABB30B003693F5 /* main.cpp */; };
 		654BCD711AABB33A003693F5 /* FrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD6F1AABB33A003693F5 /* FrameBuffer.cpp */; };
 		654BCD741AABB3EE003693F5 /* Pixel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD721AABB3EE003693F5 /* Pixel.cpp */; };
-		654BCD771AABBB31003693F5 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD751AABBB31003693F5 /* Renderer.cpp */; };
+		654BCD771AABBB31003693F5 /* ShowRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD751AABBB31003693F5 /* ShowRenderer.cpp */; };
 		654BCD7A1AABCB9E003693F5 /* LightStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD781AABCB9E003693F5 /* LightStrip.cpp */; };
 		654BCD7D1AABCC12003693F5 /* Vector3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD7B1AABCC12003693F5 /* Vector3d.cpp */; };
 /* End PBXBuildFile section */
@@ -28,14 +35,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		65179E661BCA344E00162CAF /* UDPClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UDPClient.cpp; sourceTree = "<group>"; };
+		65179E671BCA344E00162CAF /* UDPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDPClient.h; sourceTree = "<group>"; };
+		6517A03A1BCAB83300162CAF /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = /usr/local/Cellar/boost/1.58.0/lib/libboost_system.a; sourceTree = "<absolute>"; };
+		6517A03D1BCAC6D900162CAF /* FirelightFX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FirelightFX.cpp; sourceTree = "<group>"; };
+		6517A03E1BCAC6D900162CAF /* FirelightFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirelightFX.h; sourceTree = "<group>"; };
+		6517A0401BCAC6F300162CAF /* FX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FX.cpp; sourceTree = "<group>"; };
+		6517A0411BCAC6F300162CAF /* FX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FX.h; sourceTree = "<group>"; };
+		6517A0431BCACF4300162CAF /* AABB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AABB.cpp; sourceTree = "<group>"; };
+		6517A0441BCACF4300162CAF /* AABB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AABB.h; sourceTree = "<group>"; };
+		6517A0461BCAD83400162CAF /* SwipeFX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SwipeFX.cpp; sourceTree = "<group>"; };
+		6517A0471BCAD83400162CAF /* SwipeFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeFX.h; sourceTree = "<group>"; };
+		6517A0491BCADA0400162CAF /* RandomNumbers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandomNumbers.cpp; sourceTree = "<group>"; };
+		6517A04A1BCADA0400162CAF /* RandomNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomNumbers.h; sourceTree = "<group>"; };
 		654BCD651AABB30A003693F5 /* pixelrender */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pixelrender; sourceTree = BUILT_PRODUCTS_DIR; };
 		654BCD681AABB30B003693F5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		654BCD6F1AABB33A003693F5 /* FrameBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameBuffer.cpp; sourceTree = "<group>"; };
 		654BCD701AABB33A003693F5 /* FrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameBuffer.h; sourceTree = "<group>"; };
 		654BCD721AABB3EE003693F5 /* Pixel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pixel.cpp; sourceTree = "<group>"; };
 		654BCD731AABB3EE003693F5 /* Pixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pixel.h; sourceTree = "<group>"; };
-		654BCD751AABBB31003693F5 /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
-		654BCD761AABBB31003693F5 /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		654BCD751AABBB31003693F5 /* ShowRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShowRenderer.cpp; sourceTree = "<group>"; };
+		654BCD761AABBB31003693F5 /* ShowRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowRenderer.h; sourceTree = "<group>"; };
 		654BCD781AABCB9E003693F5 /* LightStrip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LightStrip.cpp; sourceTree = "<group>"; };
 		654BCD791AABCB9E003693F5 /* LightStrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightStrip.h; sourceTree = "<group>"; };
 		654BCD7B1AABCC12003693F5 /* Vector3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3d.cpp; sourceTree = "<group>"; };
@@ -47,12 +67,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6517A03B1BCAB83300162CAF /* libboost_system.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6517A03C1BCAC6C400162CAF /* FX */ = {
+			isa = PBXGroup;
+			children = (
+				6517A03D1BCAC6D900162CAF /* FirelightFX.cpp */,
+				6517A03E1BCAC6D900162CAF /* FirelightFX.h */,
+				6517A0401BCAC6F300162CAF /* FX.cpp */,
+				6517A0411BCAC6F300162CAF /* FX.h */,
+				6517A0461BCAD83400162CAF /* SwipeFX.cpp */,
+				6517A0471BCAD83400162CAF /* SwipeFX.h */,
+			);
+			name = FX;
+			sourceTree = "<group>";
+		};
 		654BCD5C1AABB30A003693F5 = {
 			isa = PBXGroup;
 			children = (
@@ -72,18 +106,25 @@
 		654BCD671AABB30A003693F5 /* pixelrender */ = {
 			isa = PBXGroup;
 			children = (
+				6517A03C1BCAC6C400162CAF /* FX */,
 				654BCD841AABEFE7003693F5 /* Libraries */,
 				654BCD681AABB30B003693F5 /* main.cpp */,
 				654BCD6F1AABB33A003693F5 /* FrameBuffer.cpp */,
 				654BCD701AABB33A003693F5 /* FrameBuffer.h */,
 				654BCD721AABB3EE003693F5 /* Pixel.cpp */,
 				654BCD731AABB3EE003693F5 /* Pixel.h */,
-				654BCD751AABBB31003693F5 /* Renderer.cpp */,
-				654BCD761AABBB31003693F5 /* Renderer.h */,
+				654BCD751AABBB31003693F5 /* ShowRenderer.cpp */,
+				654BCD761AABBB31003693F5 /* ShowRenderer.h */,
 				654BCD781AABCB9E003693F5 /* LightStrip.cpp */,
 				654BCD791AABCB9E003693F5 /* LightStrip.h */,
 				654BCD7B1AABCC12003693F5 /* Vector3d.cpp */,
 				654BCD7C1AABCC12003693F5 /* Vector3d.h */,
+				65179E661BCA344E00162CAF /* UDPClient.cpp */,
+				65179E671BCA344E00162CAF /* UDPClient.h */,
+				6517A0431BCACF4300162CAF /* AABB.cpp */,
+				6517A0441BCACF4300162CAF /* AABB.h */,
+				6517A0491BCADA0400162CAF /* RandomNumbers.cpp */,
+				6517A04A1BCADA0400162CAF /* RandomNumbers.h */,
 			);
 			path = pixelrender;
 			sourceTree = "<group>";
@@ -91,6 +132,7 @@
 		654BCD841AABEFE7003693F5 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				6517A03A1BCAB83300162CAF /* libboost_system.a */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -121,7 +163,7 @@
 		654BCD5D1AABB30A003693F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Derek Peterson";
 				TargetAttributes = {
 					654BCD641AABB30A003693F5 = {
@@ -152,11 +194,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				654BCD7A1AABCB9E003693F5 /* LightStrip.cpp in Sources */,
-				654BCD771AABBB31003693F5 /* Renderer.cpp in Sources */,
+				65179E681BCA344E00162CAF /* UDPClient.cpp in Sources */,
+				654BCD771AABBB31003693F5 /* ShowRenderer.cpp in Sources */,
 				654BCD741AABB3EE003693F5 /* Pixel.cpp in Sources */,
+				6517A0481BCAD83400162CAF /* SwipeFX.cpp in Sources */,
+				6517A0421BCAC6F300162CAF /* FX.cpp in Sources */,
+				6517A03F1BCAC6D900162CAF /* FirelightFX.cpp in Sources */,
 				654BCD691AABB30B003693F5 /* main.cpp in Sources */,
 				654BCD711AABB33A003693F5 /* FrameBuffer.cpp in Sources */,
 				654BCD7D1AABCC12003693F5 /* Vector3d.cpp in Sources */,
+				6517A0451BCACF4300162CAF /* AABB.cpp in Sources */,
+				6517A04B1BCADA0400162CAF /* RandomNumbers.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +230,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -196,7 +245,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -231,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -245,6 +294,10 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/local/include,
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.58.0/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -256,6 +309,10 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/boost/1.58.0/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -280,6 +337,7 @@
 				654BCD6E1AABB30B003693F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

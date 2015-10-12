@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "03367CC8B9E2C18D81EC0695ADD5FFF286F1FFCD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EBF9D37EFC664B65411E1F91C4146C7976A98723" : 0,
+    "03367CC8B9E2C18D81EC0695ADD5FFF286F1FFCD" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "62B025D0-DE7C-48B0-A545-0E515D1BB279",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EBF9D37EFC664B65411E1F91C4146C7976A98723" : "",
+    "03367CC8B9E2C18D81EC0695ADD5FFF286F1FFCD" : "pixelrender\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "pixelrender",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "pixelrender.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:derekmpeterson\/pixelrender.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03367CC8B9E2C18D81EC0695ADD5FFF286F1FFCD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/derekpeterson\/sparknet.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EBF9D37EFC664B65411E1F91C4146C7976A98723"
+    }
+  ]
+}

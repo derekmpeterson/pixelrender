@@ -9,14 +9,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "pixelrender/Vector3d.h"
-            timestampString = "447473486.293758"
+            filePath = "pixelrender/AABB.h"
+            timestampString = "466278098.030741"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "operator+=( const Vector3d&amp; other )"
-            landmarkType = "5">
+            startingLineNumber = "36"
+            endingLineNumber = "36">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

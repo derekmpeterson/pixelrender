@@ -10,11 +10,11 @@
 #define __pixelrender__FrameBuffer__
 
 #include <stdio.h>
-#include <map>
+#include <vector>
 
 #include "Pixel.h"
 
-typedef std::map<uint8_t,std::map<uint8_t,std::map<uint8_t,Pixel*>>> PixelGrid3d;
+typedef std::vector<Pixel*> PixelVector;
 
 class FrameBuffer
 {
@@ -24,7 +24,21 @@ public:
     int GetYSize() { return m_ySize; };
     int GetZSize() { return m_zSize; };
     
-    PixelGrid3d m_pixels;
+    void AddPixel(Pixel* i_pixel);
+    void RemovePixel( Pixel* i_pixel );
+    
+    size_t GetPixelCount() {
+        return m_pixels.size();
+    }
+    
+    Pixel* GetPixelAt(int i) {
+        return m_pixels[i];
+    }
+    
+    void Update( double i_dt );
+    
+    
+    
 private:
     FrameBuffer( int i_xSize, int i_ySize, int i_zSize );
     FrameBuffer(FrameBuffer const&){};             // copy constructor is private
@@ -34,6 +48,8 @@ private:
     int m_xSize, m_ySize, m_zSize;
     
     static FrameBuffer* m_pInstance;
+    
+    PixelVector m_pixels;
 };
 
 #endif /* defined(__pixelrender__FrameBuffer__) */

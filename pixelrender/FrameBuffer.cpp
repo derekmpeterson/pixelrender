@@ -24,6 +24,30 @@ FrameBuffer::~FrameBuffer()
 FrameBuffer* FrameBuffer::Instance()
 {
     if (!m_pInstance)   // Only allow one instance of class to be generated.
-        m_pInstance = new FrameBuffer( 100, 10, 10 );
+        m_pInstance = new FrameBuffer( 200, 2, 2 );
     return m_pInstance;
+}
+
+void FrameBuffer::AddPixel( Pixel* i_pixel )
+{
+    m_pixels.push_back(i_pixel);
+}
+
+void FrameBuffer::RemovePixel( Pixel* i_pixel )
+{
+    PixelVector::iterator position = std::find(m_pixels.begin(), m_pixels.end(), i_pixel);
+    if ( position != m_pixels.end() )
+        m_pixels.erase( position );
+}
+
+void FrameBuffer::Update( double i_dt )
+{
+    for ( int i = 0; i < GetPixelCount(); i++ )
+    {
+        Pixel* pPixel = GetPixelAt( i );
+        if ( pPixel )
+        {
+            pPixel->Update( i_dt );
+        }
+    }
 }
