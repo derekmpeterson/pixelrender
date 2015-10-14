@@ -25,6 +25,7 @@ ShowRenderer* ShowRenderer::Instance()
 
 ShowRenderer::ShowRenderer()
 {
+    // Let's add a bunch of SwipeFX as a demo show
     this->AddFX( new SwipeFX(
                              RGBA( 255, 0, 255, 255 ),
                              AABB(

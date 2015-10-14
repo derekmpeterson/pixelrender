@@ -14,6 +14,8 @@
 #include <assert.h>
 #include "Vector3d.h"
 
+// RGBA
+//   An RGBA color, 'A' being the brightness
 struct RGBA
 {
 public:
@@ -33,6 +35,8 @@ private:
     float m_r, m_g, m_b, m_bri;
 };
 
+// RGBAFade
+//   Allows smooth fading betwewen to RGBA colors over a set duration
 struct RGBAFade
 {
 public:

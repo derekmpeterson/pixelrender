@@ -54,6 +54,8 @@ LightStrip::~LightStrip()
 
 void LightStrip::Render()
 {
+    // When rendering LightStrips, we create a packet string to send to PixelServer
+    // running on the Photon or Spark Core.
     std::string pPacket = "";
     for( int i = 0; i < m_pixels.size(); i++ )
     {
@@ -66,6 +68,8 @@ void LightStrip::Render()
     }
     pPacket = '^' + pPacket + '$';
     
+    // Only send the packet if it's different than the last sent packet.
+    // Prevents unnecessary network data
     if ( pPacket != this->m_lastPacket )
     {
         this->m_lastPacket = pPacket;
@@ -76,6 +80,8 @@ void LightStrip::Render()
     }
 };
 
+// Strip special characters used by PixelServer to parse packets.
+// Replaces them with a very similar character.
 char LightStrip::SafeValue( float i_value )
 {
     char charValue = (char) i_value;

@@ -24,6 +24,7 @@ int main(int argc, const char * argv[]) {
     srand( (int) time(NULL) );
     ShowRenderer* pShowRenderer = ShowRenderer::Instance();
     
+    // LightStrip config is hardcoded and ugly for now.  Eventually this will be loaded in from a config file.
     LightStripVector pLightStrips;
     pLightStrips.push_back( new LightStrip( 115, Vector3d( 0, 0, 0 ), Vector3d( 1, 0, 0 ), "192.168.1.147" ) );
     pLightStrips.push_back( new LightStrip( 19
@@ -46,6 +47,7 @@ int main(int argc, const char * argv[]) {
             }
         }
         
+        // Sleep for dt seconds
         usleep( (int)( CLOCKS_PER_SEC * dt ) );
     }
     return 0;

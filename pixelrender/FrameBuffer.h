@@ -49,6 +49,7 @@ private:
     
     static FrameBuffer* m_pInstance;
     
+    // Stores all of the Pixels in the world
     PixelVector m_pixels;
 };
 

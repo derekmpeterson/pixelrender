@@ -5,6 +5,9 @@
 //  Created by Derek Peterson on 10/11/15.
 //  Copyright © 2015 Derek Peterson. All rights reserved.
 //
+//  Causes all Pixels within its bounding box to flicker like a candle
+//
+//
 
 #ifndef FirelightFX_hpp
 #define FirelightFX_hpp

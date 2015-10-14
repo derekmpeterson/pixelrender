@@ -5,6 +5,10 @@
 //  Created by Derek Peterson on 10/11/15.
 //  Copyright © 2015 Derek Peterson. All rights reserved.
 //
+//
+//  SwipeFX moves, causing Pixels to light up while within its bounding box
+//  and fade out when it leaves the area
+//
 
 #ifndef SwipeFX_hpp
 #define SwipeFX_hpp
