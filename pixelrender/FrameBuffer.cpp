@@ -24,7 +24,7 @@ FrameBuffer::~FrameBuffer()
 FrameBuffer* FrameBuffer::Instance()
 {
     if (!m_pInstance)   // Only allow one instance of class to be generated.
-        m_pInstance = new FrameBuffer( 200, 2, 2 );
+        m_pInstance = new FrameBuffer( 1000, 1000, 1000 );
     return m_pInstance;
 }
 

@@ -10,10 +10,12 @@
 
 #include <iostream>
 #include <cstdlib>
+#include <cmath>
 
 #include "RandomNumbers.h"
+#include "FrameBuffer.h"
 
-FirelightFX::FirelightFX(AABB i_extents, Vector3d i_velocity ) : m_extents( i_extents ), m_velocity( i_velocity )
+FirelightFX::FirelightFX(AABB i_extents, float i_speed ) : m_extents( i_extents ), m_speed( i_speed )
 {  
     m_tickRate = 0.3f;
     m_tickCounter = 0.0f;
@@ -59,5 +61,24 @@ void FirelightFX::Update(double i_dt)
             }
         }
     }
-    m_extents.SetPosition( m_extents.GetPosition() + ( m_velocity * i_dt ) );
+    Vector3d moveDir = ( m_extents.GetRotation().GetZAxis() * m_speed * i_dt );
+    m_extents.SetPosition( m_extents.GetPosition() + moveDir );
+}
+
+bool FirelightFX::IsActive()
+{
+    if ( std::abs( m_extents.GetPosition().GetX() ) > FrameBuffer::Instance()->GetXSize() )
+    {
+        return false;
+    }
+    if ( std::abs( m_extents.GetPosition().GetY() ) > FrameBuffer::Instance()->GetYSize() )
+    {
+        return false;
+    }
+    if ( std::abs( m_extents.GetPosition().GetZ() ) > FrameBuffer::Instance()->GetZSize() )
+    {
+        return false;
+    }
+    
+    return true;
 }

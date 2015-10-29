@@ -21,13 +21,14 @@
 class SwipeFX : public FX
 {
 public:
-    SwipeFX(RGBA i_color, AABB i_extents, Vector3d i_velocity);
+    SwipeFX(RGBA i_color, AABB i_extents, float i_speed);
     ~SwipeFX();
     virtual void Update(double i_dt);
+    virtual bool IsActive();
     
 private:
     AABB m_extents;
-    Vector3d m_velocity;
+    float m_speed;
     double m_tickRate;
     double m_tickCounter;
     RGBA m_color;

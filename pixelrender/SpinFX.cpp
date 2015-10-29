@@ -1,30 +1,30 @@
 //
-//  SwipeFX.cpp
+//  SpinFX.cpp
 //  pixelrender
 //
-//  Created by Derek Peterson on 10/11/15.
+//  Created by Derek Peterson on 10/29/15.
 //  Copyright © 2015 Derek Peterson. All rights reserved.
 //
 
-#include "SwipeFX.h"
+#include "SpinFX.h"
 
 #include <iostream>
 #include <cstdlib>
 #include <cmath>
 
-SwipeFX::SwipeFX(RGBA i_color, AABB i_extents, float i_speed ) : m_color( i_color ), m_extents( i_extents ), m_speed( i_speed )
+SpinFX::SpinFX(RGBA i_color, AABB i_extents, Vector3d i_velocity ) : m_color( i_color ), m_extents( i_extents ), m_velocity( i_velocity )
 {
-   
+    
     m_tickRate = 0.0f;
     m_tickCounter = 0.0f;
 }
 
-SwipeFX::~SwipeFX()
+SpinFX::~SpinFX()
 {
     
 }
 
-void SwipeFX::Update(double i_dt)
+void SpinFX::Update(double i_dt)
 {
     m_tickCounter += i_dt;
     if ( m_tickCounter >= m_tickRate )
@@ -37,16 +37,14 @@ void SwipeFX::Update(double i_dt)
             Pixel* pPixel = pFrameBuffer->GetPixelAt( i );
             if ( pPixel && m_extents.InBounds( pPixel->GetPosition() ) )
             {
-                pPixel->FadeColor( m_color, 0.05f );
-                //pPixel->SetColor( m_color );
+                pPixel->FadeColor( m_color, 0.25f );
             }
         }
     }
-    Vector3d moveDir = ( m_extents.GetRotation().GetZAxis() * m_speed * i_dt );
-    m_extents.SetPosition( m_extents.GetPosition() + moveDir );
+    m_extents.SetPosition( m_extents.GetPosition() + ( m_velocity * i_dt ) );
 }
 
-bool SwipeFX::IsActive()
+bool SpinFX::IsActive()
 {
     if ( std::abs( m_extents.GetPosition().GetX() ) > FrameBuffer::Instance()->GetXSize() )
     {

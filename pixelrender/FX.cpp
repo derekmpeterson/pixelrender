@@ -15,3 +15,8 @@ void FX::Update( double i_dt )
 {
     std::cout << "FX Update" << std::endl;
 }
+
+bool FX::IsActive()
+{
+    return true;
+}

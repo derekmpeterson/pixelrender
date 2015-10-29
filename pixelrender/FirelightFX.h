@@ -20,13 +20,14 @@
 class FirelightFX : public FX
 {
 public:
-    FirelightFX(AABB i_extents, Vector3d i_velocity);
+    FirelightFX(AABB i_extents, float m_speed);
     ~FirelightFX();
     virtual void Update(double i_dt);
+    virtual bool IsActive();
     
 private:
     AABB m_extents;
-    Vector3d m_velocity;
+    float m_speed;
     double m_tickRate;
     double m_tickCounter;
 };

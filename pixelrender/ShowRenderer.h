@@ -14,9 +14,19 @@
 
 #include <vector>
 #include <chrono>
+#include <string>
 #include "FX.h"
+#include "ImpulseFX.h"
 
 typedef std::vector<FX*> FXVector;
+
+struct ShowEvent
+{
+public:
+    ShowEvent( float i_time, std::string i_command ) : m_time( i_time ), m_command( i_command ) {};
+    float m_time;
+    std::string m_command;
+};
 
 class ShowRenderer
 {
@@ -26,19 +36,22 @@ public:
     
     static ShowRenderer* Instance();
     
-    void Start();    
+    void Start( std::string i_command );
     void Render( double i_dt );
     
     void AddFX( FX* i_fx );
     void RemoveFX( FX* i_fx );
     
+    void ChangeMode( std::string i_mode );
+    
 private:
     static ShowRenderer* m_pInstance;
     FXVector m_activeFX;
     
-    double m_events[50000];
-    int m_lastEvent;
+    std::vector<float> m_beats;
+    std::vector<ShowEvent> m_events;
     std::chrono::high_resolution_clock::time_point m_startTime;
+    ImpulseFX* m_impulseFX;
 };
 
 #endif /* defined(__pixelrender__ShowRenderer__) */

@@ -15,29 +15,23 @@
 #include "Pixel.h"
 #include "Vector3d.h"
 #include "UDPClient.h"
+#include "LightStripSegment.h"
 
 class LightStrip
 {
 public:
-    LightStrip( uint16_t i_pixelCount, Vector3d i_position, Vector3d i_direction, std::string i_ipAddress );
+    LightStrip( uint16_t i_pixelCount );
     ~LightStrip();
     
-    std::vector<Pixel*> GetPixels() { return m_pixels; };
-    
-    void Render();
+    std::vector<LightStripSegment*> GetSegments() { return m_segments; };
+    void AddSegment(LightStripSegment* i_segment) {
+        m_segments.push_back(i_segment);
+    }
 private:
     uint16_t m_pixelCount;
-    Vector3d m_position;
-    Vector3d m_direction;
-    std::vector<Pixel*> m_pixels;
     
-    std::string m_ipAddress;
-    std::string m_lastPacket;
+    std::vector<LightStripSegment*> m_segments;
     
-    boost::asio::io_service m_ioservice;
-    UDPClient* m_client;
-    
-    char SafeValue( float i_value );
 };
 
 #endif /* defined(__pixelrender__LightStrip__) */

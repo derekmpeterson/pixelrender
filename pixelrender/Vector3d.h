@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <stdint.h>
+#include <cmath>
 
 class Vector3d
 {
@@ -24,6 +25,26 @@ public:
     void SetY( float i_Y ) { m_Y = i_Y; };
     void SetZ( float i_Z ) { m_Z = i_Z; };
     
+    float GetLength() const
+    {
+        return sqrt( m_X * m_X + m_Y * m_Y + m_Z * m_Z );
+    }
+    
+    float Dot( const Vector3d& other ) const
+    {
+        return m_X * other.GetX() + m_Y * other.GetY() + m_Z * other.GetZ();
+    }
+    
+    Vector3d Cross( const Vector3d& other ) const
+    {
+        Vector3d pVector;
+        pVector.SetX( m_Y * other.GetZ() - m_Z * other.GetY() );
+        pVector.SetY( m_Z * other.GetX() - m_X * other.GetZ() );
+        pVector.SetZ( m_X * other.GetY() - m_Y * other.GetX() );
+        
+        return pVector;
+    }
+    
     Vector3d& operator+=( const Vector3d& other ) // compound assignment (does not need to be a member,
     {                           // but often is, to modify the private members)
         this->SetX( this->GetX() + other.GetX() );
@@ -35,6 +56,12 @@ public:
     Vector3d operator+( const Vector3d& other )
     {
         Vector3d newVector( this->GetX() + other.GetX(), this->GetY() + other.GetY(), this->GetZ() + other.GetZ() );
+        return newVector;
+    }
+    
+    Vector3d operator-( const Vector3d& other )
+    {
+        Vector3d newVector( this->GetX() - other.GetX(), this->GetY() - other.GetY(), this->GetZ() - other.GetZ() );
         return newVector;
     }
     

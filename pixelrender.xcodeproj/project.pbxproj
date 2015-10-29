@@ -20,6 +20,15 @@
 		654BCD771AABBB31003693F5 /* ShowRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD751AABBB31003693F5 /* ShowRenderer.cpp */; };
 		654BCD7A1AABCB9E003693F5 /* LightStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD781AABCB9E003693F5 /* LightStrip.cpp */; };
 		654BCD7D1AABCC12003693F5 /* Vector3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 654BCD7B1AABCC12003693F5 /* Vector3d.cpp */; };
+		65735AA71BE308FC0018FA52 /* FlashFX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65735AA51BE308FC0018FA52 /* FlashFX.cpp */; };
+		65735AAA1BE327320018FA52 /* ImpulseFlashFX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65735AA81BE327320018FA52 /* ImpulseFlashFX.cpp */; };
+		65735AAD1BE32B5F0018FA52 /* ImpulseFX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65735AAB1BE32B5F0018FA52 /* ImpulseFX.cpp */; };
+		65735AB01BE330E40018FA52 /* ImpulseSwipeFX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65735AAE1BE330E40018FA52 /* ImpulseSwipeFX.cpp */; };
+		658445841BE2B4FE000893CB /* Photon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 658445821BE2B4FE000893CB /* Photon.cpp */; };
+		658445871BE2C45F000893CB /* LightStripSegment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 658445851BE2C45F000893CB /* LightStripSegment.cpp */; };
+		6584458A1BE2DF94000893CB /* MarchFX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 658445881BE2DF94000893CB /* MarchFX.cpp */; };
+		6584458D1BE2E103000893CB /* RotMat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6584458B1BE2E103000893CB /* RotMat.cpp */; };
+		658445901BE2EF08000893CB /* SpinFX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6584458E1BE2EF08000893CB /* SpinFX.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +69,24 @@
 		654BCD791AABCB9E003693F5 /* LightStrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightStrip.h; sourceTree = "<group>"; };
 		654BCD7B1AABCC12003693F5 /* Vector3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3d.cpp; sourceTree = "<group>"; };
 		654BCD7C1AABCC12003693F5 /* Vector3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3d.h; sourceTree = "<group>"; };
+		65735AA51BE308FC0018FA52 /* FlashFX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlashFX.cpp; sourceTree = "<group>"; };
+		65735AA61BE308FC0018FA52 /* FlashFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashFX.h; sourceTree = "<group>"; };
+		65735AA81BE327320018FA52 /* ImpulseFlashFX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImpulseFlashFX.cpp; sourceTree = "<group>"; };
+		65735AA91BE327320018FA52 /* ImpulseFlashFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImpulseFlashFX.h; sourceTree = "<group>"; };
+		65735AAB1BE32B5F0018FA52 /* ImpulseFX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImpulseFX.cpp; sourceTree = "<group>"; };
+		65735AAC1BE32B5F0018FA52 /* ImpulseFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImpulseFX.h; sourceTree = "<group>"; };
+		65735AAE1BE330E40018FA52 /* ImpulseSwipeFX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImpulseSwipeFX.cpp; sourceTree = "<group>"; };
+		65735AAF1BE330E40018FA52 /* ImpulseSwipeFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImpulseSwipeFX.h; sourceTree = "<group>"; };
+		658445821BE2B4FE000893CB /* Photon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Photon.cpp; sourceTree = "<group>"; };
+		658445831BE2B4FE000893CB /* Photon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photon.h; sourceTree = "<group>"; };
+		658445851BE2C45F000893CB /* LightStripSegment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LightStripSegment.cpp; sourceTree = "<group>"; };
+		658445861BE2C45F000893CB /* LightStripSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightStripSegment.h; sourceTree = "<group>"; };
+		658445881BE2DF94000893CB /* MarchFX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MarchFX.cpp; sourceTree = "<group>"; };
+		658445891BE2DF94000893CB /* MarchFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarchFX.h; sourceTree = "<group>"; };
+		6584458B1BE2E103000893CB /* RotMat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RotMat.cpp; sourceTree = "<group>"; };
+		6584458C1BE2E103000893CB /* RotMat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotMat.h; sourceTree = "<group>"; };
+		6584458E1BE2EF08000893CB /* SpinFX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpinFX.cpp; sourceTree = "<group>"; };
+		6584458F1BE2EF08000893CB /* SpinFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinFX.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +104,24 @@
 		6517A03C1BCAC6C400162CAF /* FX */ = {
 			isa = PBXGroup;
 			children = (
+				65735AAE1BE330E40018FA52 /* ImpulseSwipeFX.cpp */,
+				65735AAF1BE330E40018FA52 /* ImpulseSwipeFX.h */,
+				65735AAB1BE32B5F0018FA52 /* ImpulseFX.cpp */,
+				65735AAC1BE32B5F0018FA52 /* ImpulseFX.h */,
+				65735AA81BE327320018FA52 /* ImpulseFlashFX.cpp */,
+				65735AA91BE327320018FA52 /* ImpulseFlashFX.h */,
+				65735AA51BE308FC0018FA52 /* FlashFX.cpp */,
+				65735AA61BE308FC0018FA52 /* FlashFX.h */,
 				6517A03D1BCAC6D900162CAF /* FirelightFX.cpp */,
 				6517A03E1BCAC6D900162CAF /* FirelightFX.h */,
 				6517A0401BCAC6F300162CAF /* FX.cpp */,
 				6517A0411BCAC6F300162CAF /* FX.h */,
 				6517A0461BCAD83400162CAF /* SwipeFX.cpp */,
 				6517A0471BCAD83400162CAF /* SwipeFX.h */,
+				658445881BE2DF94000893CB /* MarchFX.cpp */,
+				658445891BE2DF94000893CB /* MarchFX.h */,
+				6584458E1BE2EF08000893CB /* SpinFX.cpp */,
+				6584458F1BE2EF08000893CB /* SpinFX.h */,
 			);
 			name = FX;
 			sourceTree = "<group>";
@@ -125,6 +164,12 @@
 				6517A0441BCACF4300162CAF /* AABB.h */,
 				6517A0491BCADA0400162CAF /* RandomNumbers.cpp */,
 				6517A04A1BCADA0400162CAF /* RandomNumbers.h */,
+				658445821BE2B4FE000893CB /* Photon.cpp */,
+				658445831BE2B4FE000893CB /* Photon.h */,
+				658445851BE2C45F000893CB /* LightStripSegment.cpp */,
+				658445861BE2C45F000893CB /* LightStripSegment.h */,
+				6584458B1BE2E103000893CB /* RotMat.cpp */,
+				6584458C1BE2E103000893CB /* RotMat.h */,
 			);
 			path = pixelrender;
 			sourceTree = "<group>";
@@ -195,16 +240,25 @@
 			files = (
 				654BCD7A1AABCB9E003693F5 /* LightStrip.cpp in Sources */,
 				65179E681BCA344E00162CAF /* UDPClient.cpp in Sources */,
+				6584458D1BE2E103000893CB /* RotMat.cpp in Sources */,
 				654BCD771AABBB31003693F5 /* ShowRenderer.cpp in Sources */,
+				658445901BE2EF08000893CB /* SpinFX.cpp in Sources */,
 				654BCD741AABB3EE003693F5 /* Pixel.cpp in Sources */,
+				65735AB01BE330E40018FA52 /* ImpulseSwipeFX.cpp in Sources */,
 				6517A0481BCAD83400162CAF /* SwipeFX.cpp in Sources */,
+				6584458A1BE2DF94000893CB /* MarchFX.cpp in Sources */,
+				65735AAA1BE327320018FA52 /* ImpulseFlashFX.cpp in Sources */,
+				65735AA71BE308FC0018FA52 /* FlashFX.cpp in Sources */,
+				658445871BE2C45F000893CB /* LightStripSegment.cpp in Sources */,
 				6517A0421BCAC6F300162CAF /* FX.cpp in Sources */,
 				6517A03F1BCAC6D900162CAF /* FirelightFX.cpp in Sources */,
 				654BCD691AABB30B003693F5 /* main.cpp in Sources */,
 				654BCD711AABB33A003693F5 /* FrameBuffer.cpp in Sources */,
 				654BCD7D1AABCC12003693F5 /* Vector3d.cpp in Sources */,
+				658445841BE2B4FE000893CB /* Photon.cpp in Sources */,
 				6517A0451BCACF4300162CAF /* AABB.cpp in Sources */,
 				6517A04B1BCADA0400162CAF /* RandomNumbers.cpp in Sources */,
+				65735AAD1BE32B5F0018FA52 /* ImpulseFX.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

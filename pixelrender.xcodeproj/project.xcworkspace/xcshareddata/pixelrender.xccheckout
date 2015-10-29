@@ -7,34 +7,34 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>62B025D0-DE7C-48B0-A545-0E515D1BB279</string>
 	<key>IDESourceControlProjectName</key>
-	<string>pixelrender</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>EBF9D37EFC664B65411E1F91C4146C7976A98723</key>
-		<string>https://bitbucket.org/derekpeterson/sparknet.git</string>
+		<key>03367CC8B9E2C18D81EC0695ADD5FFF286F1FFCD</key>
+		<string>bitbucket.org:derekpeterson/pixelrender.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>pixelrender/pixelrender.xcodeproj</string>
+	<string>pixelrender.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>EBF9D37EFC664B65411E1F91C4146C7976A98723</key>
-		<string>../../..</string>
+		<key>03367CC8B9E2C18D81EC0695ADD5FFF286F1FFCD</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/derekpeterson/sparknet.git</string>
+	<string>bitbucket.org:derekpeterson/pixelrender.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EBF9D37EFC664B65411E1F91C4146C7976A98723</string>
+	<string>03367CC8B9E2C18D81EC0695ADD5FFF286F1FFCD</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>EBF9D37EFC664B65411E1F91C4146C7976A98723</string>
+			<string>03367CC8B9E2C18D81EC0695ADD5FFF286F1FFCD</string>
 			<key>IDESourceControlWCCName</key>
-			<string>sparknet</string>
+			<string>pixelrender</string>
 		</dict>
 	</array>
 </dict>

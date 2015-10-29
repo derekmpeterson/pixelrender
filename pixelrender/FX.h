@@ -14,7 +14,8 @@
 class FX
 {
 public:
-    virtual void Update(double i_dt);
+    virtual void Update( double i_dt );
+    virtual bool IsActive();
 private:
     
 };
